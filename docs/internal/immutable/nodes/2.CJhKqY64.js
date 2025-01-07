@@ -1,1 +1,0 @@
-import{a as r,t}from"../chunks/disclose-version.DYUJ63WF.js";import{i}from"../chunks/legacy.09J61Kew.js";import{p as m,a as s}from"../chunks/runtime.BbCA1e8G.js";import{o as e}from"../chunks/index-client.wVcYbbNC.js";var n=t("<div>sigmer</div>");function u(o,a){m(a,!1),e(()=>{alert("asd")}),i();var p=n();r(o,p),s()}export{u as component};

@@ -1,19 +1,27 @@
-import containerQueries from "@tailwindcss/container-queries";
-import forms from "@tailwindcss/forms";
-import typography from "@tailwindcss/typography";
-import type { Config } from "tailwindcss";
+import { join } from 'path'
+import type { Config } from 'tailwindcss'
+import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
+import { skeleton } from '@skeletonlabs/tw-plugin'
 
 export default {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
-
-  theme: {
-    extend: {
-      aspectRatio: {
-        "9/16": "9 / 16",
-        "12/9": "12 / 9",
-      },
-    },
-  },
-
-  plugins: [typography, forms, containerQueries],
+	darkMode: 'class',
+	content: ['./src/**/*.{html,js,svelte,ts}', join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')],
+	theme: {
+		extend: {},
+	},
+	plugins: [
+		forms,
+		typography,
+		skeleton({
+			themes: {
+				preset: [
+					{
+						name: 'skeleton',
+						enhancements: true,
+					},
+				],
+			},
+		}),
+	],
 } satisfies Config;
