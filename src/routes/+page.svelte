@@ -7,7 +7,6 @@
 </script>
 
 {#each t as item,i}
-	 <!-- content here -->
 	  <hr>
 	  {i}
 {/each}
