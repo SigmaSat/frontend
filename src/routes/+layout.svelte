@@ -23,12 +23,6 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
-	<svelte:fragment slot="lead">side drawer</svelte:fragment>
-	title of the current page
-	<svelte:fragment slot="trail">github or insta or smth</svelte:fragment>
-</AppBar>
-
-<div class="overflow-y-scroll ">
+<div class="">
 	<slot/>
 </div>
