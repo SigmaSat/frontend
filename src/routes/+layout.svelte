@@ -23,6 +23,10 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<title>
+	Website of SigmaSat
+</title>
+
 <div class="">
 	<slot/>
 </div>
